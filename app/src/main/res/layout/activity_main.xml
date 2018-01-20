@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94BD31"
+    tools:context="gasolinaoualcool.cursoandroid.com.gasolinaoualcool.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginStart="16dp"
+        android:text="Preço Álcool"
+        android:textColor="#415C00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/precoAlcoolID"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="Preço Gasolina"
+        android:textColor="#415C00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/precoGasolinaId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/precoAlcoolID"
+        android:layout_width="108dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="79dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="79dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padding_caixa_texto"
+        android:textAlignment="viewEnd"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoVerificarId"
+        app:layout_constraintEnd_toStartOf="@+id/precoGasolinaId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <EditText
+        android:id="@+id/precoGasolinaId"
+        android:layout_width="108dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="39dp"
+        android:autoText="true"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/padding_caixa_texto"
+        android:textAlignment="viewEnd"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoVerificarId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/precoAlcoolID"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/botaoVerificarId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/texto_botao_verificar"
+        app:layout_constraintBottom_toTopOf="@+id/textoResultadoId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precoGasolinaId" />
+
+    <TextView
+        android:id="@+id/textoResultadoId"
+        android:layout_width="316dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="83dp"
+        android:layout_marginStart="36dp"
+        android:textColor="#415C00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoVerificarId" />
+</android.support.constraint.ConstraintLayout>
